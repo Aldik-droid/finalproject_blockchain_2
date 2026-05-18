@@ -20,7 +20,7 @@
 | **Base Sepolia deploy** | Wallet `0xE2Bace…072E6` has **0 ETH** on Base Sepolia | Fund via [Base Sepolia faucet](https://www.coinbase.com/faucets/base-ethereum-sepolia-faucet), then run `.\scripts\deploy-base-sepolia.ps1` |
 | **Contract verify** | Needs `BASESCAN_API_KEY` optional | Set env var, re-run deploy with `--verify` |
 | **Subgraph publish** | No `GRAPH_DEPLOY_KEY` / Studio login | `cd subgraph && npx graph auth --studio <KEY> && npx graph deploy --studio defi-super-app` |
-| **GitHub push** | `gh` CLI not installed, no `origin` remote | Create repo on GitHub, then `git remote add origin <url> && git push -u origin master` |
+| **GitHub push** | — | https://github.com/Aldik-droid/finalproject_blockchain_2 |
 
 ## One-command deploy (after faucet)
 

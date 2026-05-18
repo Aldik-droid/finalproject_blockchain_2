@@ -91,6 +91,10 @@ Documented queries: `subgraph/queries.md`.
 Target: **Base Sepolia** (chain id 84532).  
 After deploy, verify on [BaseScan Sepolia](https://sepolia.basescan.org/) and update `deployments/base-sepolia.json`.
 
+## Repository
+
+https://github.com/Aldik-droid/finalproject_blockchain_2
+
 ## License
 
 MIT — educational use.
