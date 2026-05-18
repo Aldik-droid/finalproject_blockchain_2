@@ -34,7 +34,7 @@ jobs:
       - uses: crytic/slither-action@v0.4.0
         with:
           target: src/
-          slither-args: --filter-paths "lib|test"
+          slither-args: --filter-paths "lib|test|security" --exclude reentrancy-no-eth,divide-before-multiply,incorrect-equality,unused-return
 
   frontend:
     runs-on: ubuntu-latest

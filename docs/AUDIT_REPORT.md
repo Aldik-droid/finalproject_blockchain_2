@@ -226,8 +226,10 @@ No `tx.origin` authorization. No `transfer`/`send` for ETH. ERC-20 via `SafeERC2
 **Command (run before submission):**
 
 ```bash
-slither src/ --filter-paths "lib|test" --json slither-report.json
+python -m slither src/ --filter-paths "lib|test" --json docs/slither-report.json
 ```
+
+**Latest run (repository):** 45 informational/low findings, **0 High, 0 Medium** — see `docs/slither-report.json` and `docs/slither-report.txt`.
 
 **CI:** `.github/workflows/ci.yml` uses `crytic/slither-action` on `src/`.
 

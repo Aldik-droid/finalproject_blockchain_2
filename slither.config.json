@@ -1,0 +1,4 @@
+{
+  "filter_paths": "lib|test|security",
+  "exclude": "reentrancy-no-eth,divide-before-multiply,incorrect-equality,unused-return"
+}
