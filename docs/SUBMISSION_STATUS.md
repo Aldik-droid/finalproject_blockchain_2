@@ -17,7 +17,8 @@
 
 | Step | Reason | Action |
 |------|--------|--------|
-| **Base Sepolia deploy** | Wallet `0xE2Bace…072E6` has **0 ETH** on Base Sepolia | Fund via [Base Sepolia faucet](https://www.coinbase.com/faucets/base-ethereum-sepolia-faucet), then run `.\scripts\deploy-base-sepolia.ps1` |
+| **Base Sepolia deploy** | Done | `deployments/base-sepolia.json`, `docs/terminal-outputs/forge-deploy-base-sepolia.txt` |
+| **Verify deployment** | Done | `VERIFICATION_PASSED` in `docs/terminal-outputs/verify-deployment.txt` |
 | **Contract verify** | Needs `BASESCAN_API_KEY` optional | Set env var, re-run deploy with `--verify` |
 | **Subgraph publish** | No `GRAPH_DEPLOY_KEY` / Studio login | `cd subgraph && npx graph auth --studio <KEY> && npx graph deploy --studio defi-super-app` |
 | **GitHub push** | — | https://github.com/Aldik-droid/finalproject_blockchain_2 |
