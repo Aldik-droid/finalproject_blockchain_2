@@ -42,7 +42,12 @@ contract Deploy is Script {
         address deployer = msg.sender;
         vm.startBroadcast();
 
-        d.treasury = address(new Treasury(deployer));
+        address[] memory proposers;
+        address[] memory executors = new address[](1);
+        executors[0] = address(0);
+        d.timelock = address(new TimelockController(TIMELOCK_DELAY, proposers, executors, deployer));
+
+        d.treasury = address(new Treasury(d.timelock));
         d.govToken = address(new DeFiGovToken(d.treasury));
         d.protocolToken = address(new ProtocolToken(deployer));
         d.lpNft = address(new LPPositionNFT(deployer));
@@ -58,10 +63,6 @@ contract Deploy is Script {
         d.vault = address(new YieldVault4626(pt, deployer));
         d.factory = address(new PoolFactory(deployer));
 
-        address[] memory proposers;
-        address[] memory executors = new address[](1);
-        executors[0] = address(0);
-        d.timelock = address(new TimelockController(TIMELOCK_DELAY, proposers, executors, deployer));
         d.governor = address(new DeFiGovernor(DeFiGovToken(d.govToken), TimelockController(payable(d.timelock))));
 
         TimelockController tl = TimelockController(payable(d.timelock));

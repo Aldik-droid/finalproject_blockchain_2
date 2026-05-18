@@ -86,10 +86,18 @@ cd subgraph
 
 Documented queries: `subgraph/queries.md`.
 
-## L2 deployment
+## L2 deployment (Base Sepolia — live)
 
-Target: **Base Sepolia** (chain id 84532).  
-After deploy, verify on [BaseScan Sepolia](https://sepolia.basescan.org/) and update `deployments/base-sepolia.json`.
+| Contract | Address |
+|----------|---------|
+| ConstantProductAMM | [0x006C…2e08](https://sepolia.basescan.org/address/0x006C8F6139789A10eA3d74Fe4BE5901280d12e08) |
+| LendingPool | [0xaB5e…69C7](https://sepolia.basescan.org/address/0xaB5e117bA698d720f92A95BD06B51394DDEb69C7) |
+| YieldVault4626 | [0x1e47…4bCE](https://sepolia.basescan.org/address/0x1e47d477868557e8a3138d4a945326912EC04bCE) |
+| DeFiGovToken | [0xCfC6…CDf3](https://sepolia.basescan.org/address/0xCfC6EDbd5d57023610276920700fAe9332BFCDf3) |
+| DeFiGovernor | [0xBDEa…273d](https://sepolia.basescan.org/address/0xBDEa97Fb1044A22A32509da6E4A6dC4C610D273d) |
+| TimelockController | [0x7757…82A6](https://sepolia.basescan.org/address/0x775745c005282a19f0872767e7c873aB8dA882A6) |
+
+Full list: `deployments/base-sepolia.json`. Post-deploy check: `docs/terminal-outputs/verify-deployment.txt`.
 
 ## Repository
 

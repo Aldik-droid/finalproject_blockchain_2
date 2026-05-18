@@ -6,10 +6,9 @@ dataSources:
     name: ConstantProductAMM
     network: base-sepolia
     source:
-      address: "0x0000000000000000000000000000000000000000"
-      # Replace with ConstantProductAMM from deployments/base-sepolia.json after deploy
+      address: "0x006C8F6139789A10eA3d74Fe4BE5901280d12e08"
       abi: AMM
-      startBlock: 0
+      startBlock: 41733389
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7

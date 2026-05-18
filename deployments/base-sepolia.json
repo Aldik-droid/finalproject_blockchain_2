@@ -1,20 +1,19 @@
 {
   "chainId": 84532,
-  "network": "base-sepolia",
-  "note": "Run: forge script script/Deploy.s.sol --rpc-url https://sepolia.base.org --broadcast --verify --private-key <KEY>. Script writes this file automatically.",
   "contracts": {
-    "DeFiGovToken": "",
-    "ProtocolToken": "",
-    "LPPositionNFT": "",
-    "ConstantProductAMM": "",
-    "LendingPool": "",
-    "YieldVault4626": "",
-    "PriceOracle": "",
-    "MockChainlinkAggregator": "",
-    "PoolFactory": "",
-    "Treasury": "",
-    "TimelockController": "",
-    "DeFiGovernor": "",
-    "ProtocolRegistry": ""
-  }
+    "ConstantProductAMM": "0x006C8F6139789A10eA3d74Fe4BE5901280d12e08",
+    "DeFiGovToken": "0xCfC6EDbd5d57023610276920700fAe9332BFCDf3",
+    "DeFiGovernor": "0xBDEa97Fb1044A22A32509da6E4A6dC4C610D273d",
+    "LPPositionNFT": "0xcca0dfab08bbFCC29fEE472364EF1CADe807a095",
+    "LendingPool": "0xaB5e117bA698d720f92A95BD06B51394DDEb69C7",
+    "MockChainlinkAggregator": "0x410B00a7a4ad3A098d81bFaf7fAbFC26634D1d37",
+    "PoolFactory": "0x52554aa56F697d44bd2DC31D9d87A43f8eeea09A",
+    "PriceOracle": "0xbc272Fa966DAFEbA572B892075Ae5bb26EdCb1Cc",
+    "ProtocolRegistry": "0x15Ce94F38800945a305cA7BC9620b2D03171d623",
+    "ProtocolToken": "0xb242405D356C076445676e78595a456B30Ec7Adb",
+    "TimelockController": "0x775745c005282a19f0872767e7c873aB8dA882A6",
+    "Treasury": "0xa0B4714B224069aF004C1CbE4AfbC705E3fC0759",
+    "YieldVault4626": "0x1e47d477868557e8a3138d4a945326912EC04bCE"
+  },
+  "network": "base-sepolia"
 }
