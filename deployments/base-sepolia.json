@@ -1,0 +1,20 @@
+{
+  "chainId": 84532,
+  "network": "base-sepolia",
+  "note": "Run: forge script script/Deploy.s.sol --rpc-url https://sepolia.base.org --broadcast --verify --private-key <KEY>. Script writes this file automatically.",
+  "contracts": {
+    "DeFiGovToken": "",
+    "ProtocolToken": "",
+    "LPPositionNFT": "",
+    "ConstantProductAMM": "",
+    "LendingPool": "",
+    "YieldVault4626": "",
+    "PriceOracle": "",
+    "MockChainlinkAggregator": "",
+    "PoolFactory": "",
+    "Treasury": "",
+    "TimelockController": "",
+    "DeFiGovernor": "",
+    "ProtocolRegistry": ""
+  }
+}

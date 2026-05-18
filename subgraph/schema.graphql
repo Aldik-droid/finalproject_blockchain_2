@@ -1,0 +1,32 @@
+type Protocol @entity(immutable: false) {
+  id: ID!
+  totalSwaps: BigInt!
+  totalLiquidityEvents: BigInt!
+}
+
+type Swap @entity(immutable: true) {
+  id: ID!
+  sender: Bytes!
+  amount0In: BigInt!
+  amount1In: BigInt!
+  amount0Out: BigInt!
+  amount1Out: BigInt!
+  timestamp: BigInt!
+  blockNumber: BigInt!
+}
+
+type LiquidityMint @entity(immutable: true) {
+  id: ID!
+  sender: Bytes!
+  amount0: BigInt!
+  amount1: BigInt!
+  liquidity: BigInt!
+  timestamp: BigInt!
+}
+
+type PoolDayData @entity(immutable: false) {
+  id: ID!
+  date: Int!
+  swapCount: Int!
+  volumeToken0: BigInt!
+}

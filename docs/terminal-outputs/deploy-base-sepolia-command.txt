@@ -1,0 +1,21 @@
+# Base Sepolia deployment (required before submission)
+# Foundry must be on PATH: %USERPROFILE%\.foundry\bin
+
+# PowerShell:
+$env:BASE_SEPOLIA_RPC = "https://sepolia.base.org"
+$pk = "<YOUR_TESTNET_PRIVATE_KEY>"   # never commit this key
+
+forge script script/Deploy.s.sol `
+  --rpc-url $env:BASE_SEPOLIA_RPC `
+  --broadcast `
+  --verify `
+  --private-key $pk
+
+# After success:
+# 1. deployments/base-sepolia.json is updated automatically
+# 2. Copy addresses into frontend/.env (see frontend/.env.example)
+# 3. Run post-deploy verification:
+$env:TIMELOCK = "<TimelockController from JSON>"
+$env:GOVERNOR = "<DeFiGovernor from JSON>"
+$env:TREASURY = "<Treasury from JSON>"
+forge script script/VerifyDeployment.s.sol --rpc-url $env:BASE_SEPOLIA_RPC
